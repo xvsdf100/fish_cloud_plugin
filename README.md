@@ -4,6 +4,34 @@
 
 本软件只是练手electron 技术而已，后续慢慢补充各种插件和web，实现自己软件自给自足。提高自己快速编码能力和产品的驾驭能力。
 
+## 更新 1.0.0.3
+1. 增加内存map读写接口
+2. 增加网络访问接口，解决跨域问题
+3. 增加F12打开开发者模式
+
+### 内存接口
+    //设置map
+     window.app_mem_map.set(mem_key, gap)
+
+     //获取Map的值
+     window.app_mem_map.get(mem_key)
+
+    //删除
+     window.app_mem_map.delete    
+
+     //是否包含  
+     window.app_mem_map.has
+
+### 网络接口
+    //get 请求
+    request_get
+
+    //post 表单请求
+    request_post_form
+
+### 增加网页定时器JS插件
+
+
 ## 更新
 支持JS注入，方便把别的web变成自己的应用，这个也是这个软件核心思想。
 
